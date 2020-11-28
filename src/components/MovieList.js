@@ -1,9 +1,9 @@
 import React from "react";
 
-const MovieList = (props) => {
+const MovieList = ({ movies }) => {
   return (
     <>
-      {props.movies.map((movie, index) => (
+      {movies.map((movie, index) => (
         <div
           className="image-container d-flex justify-content-start m-3"
           key={index}
